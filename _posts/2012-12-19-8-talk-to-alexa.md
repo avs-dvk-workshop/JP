@@ -1,38 +1,33 @@
 ---
-title: '8. Talk to Alexa'
+title: '8. Alexaと話す'
 
 
 layout: nil
 ---
 
 {:.steps}
-### Interact with Your Prototype
-You can now talk to your Intel Speech Enabling Developer Kit by simply saying the wake word "Alexa". Try the following, and watch the output in the terminal window to see the directives and events that flow for each -
+### プロトタイプとのインターラクション
+これでウェイクワードの"Alexa"と話しかけるだけで、Intel Speech Enabling Developer Kitと会話ができるようになります。下記を試して、ターミナルウィンドウに表示されるそれぞれのディレクティブやイベントを確認します。
 
-* Say "Alexa", then ask "What time is it?"  
-* Say "Alexa", then ask "What's the weather in Las Vegas?"  
-* Say "Alexa", then say "Set a timer for 5 seconds."
-* Say "Alexa", then say "Play NPR news on TuneIn."
-* Say "Alexa", then say "Good afternoon."
-* Say "Alexa", then say "Tell me a joke."
-* Say "Alexa", then ask "What's the meaning of life?"
-* Say "Alexa", then say "Sing happy birthday."
-* Say "Alexa", then ask "What day of the week does Christmas fall on?"
-* Say "Alexa", then ask "Where were you born?"
-* Say "Alexa", then ask "Can you rap?"
+* "Alexa", ”いま何時？"と話しかけます。
+* "Alexa", ”目黒の天気を教えて？"と話しかけます。
+* "Alexa", ”5秒のタイマーをセットして"と話しかけます。
+* "Alexa", ”TuneInでクラッシックFMを再生して"と話しかけます。
+* "Alexa", ”こんにちは"と話しかけます。
+* "Alexa", ”冗談を言って"と話しかけます。
+* "Alexa", ”人生の意味ってなに？"と話しかけます。
+* "Alexa", ”ハッピバースデーを歌って"と話しかけます。
+* "Alexa", ”どこで生まれたの？"と話しかけます。
+* "Alexa", ”いま何時？"と話しかけます。
+* "Alexa", ”なにか歌って？"と話しかけます。
 
-### Try a Multi-Turn interaction
+### マルチターンインターラクションを試す
 
-* Say "Alexa", then ask "Set an alarm for 12:30".  You should receive a response asking you to clarify AM or PM.  Respond to the question with "Afternoon".  If you have DEBUG9 active, scroll up until you see **Listening...** - right above that you'll see that the state of the **Audio Input Processor** (AIP) has changed from `IDLE` to `EXPECTING_SPEECH` and then `RECOGNIZING` - without you speaking the wake word!  Typically, the AIP is triggered by the **Wake Word Engine** running on the client - but in this case, it's been activated via a **Directive** delivered down to your client from the cloud.
+* "Alexa"と言ったあと、"12:30にアラームをセットして"と話しかけます。午前か午後かを確認するレスポンスを受けます。”午後”と答えてください。DEBUG9が設定されている場合、**Listening...** のところまでスクロールで戻り、ウェイクワードを言わなくとも、**Audio Input Processor** (AIP) がIDLE`から`EXPECTING_SPEECH`そして`RECOGNIZING`に変わっていっていることを確認します。通常AIPはクライアントで起動している**Wake Word Engine** からトリガーされます。しかしこのケースでは、クラウドからクライアントに送信された**Directive**によりアクティベートされています。
 
 ![AIP_multiturn](../assets/AIP_Multi.png)
 
-Multi-turn interactions can feel like a more natural method of communication, since you can continue to speak with Alexa as part of a continuing conversation without starting every phrase with "Alexa".  
+マルチターンインターラクションはより、Alexaと都度発する必要がなく、Alexaとの会話を継続できることから、より自然にコミュニケーションを行っている感覚を得られます。
 
-### Other Multi-Turn interactions to Try
-
-* Say "Alexa, Wikipedia" - you'll have the option of looking up any subject without having to speak the wake word before the subject.
-* Say "Alexa, play Yes Sire" - open up a top-rated Medieval themed game!
-* Say "Alexa, let's chat" to start a discussion with our new chat bots.
 
 ---

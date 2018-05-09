@@ -1,28 +1,26 @@
 ---
-title: '5. Run the Setup and Install Script'
+title: '5. セットアップとインストールスクリプトの実行'
 
 
 layout: nil
 ---
 
 {:.steps}
-### Configure your device and run the Install Script
+### デバイスの設定およびインストールスクリプトの実行
 
-> **NOTE:** For the purposes of this workshop, portions of the SDK have been pre-compiled to save time.  
+> **NOTE:** 本ワークショップでは、作業時間の短縮のため、SDKは事前にプリコンパイルしています。  
 
-Your device needs to authenticate your unique information with the cloud in order to activate Alexa.  To start the setup and install script, do the following steps on your Raspberry Pi:
+Alexaをアクティベートするためには、固有の情報を利用してデバイスをクラウドと認証させる必要があります。。セットアップとインストールスクリプトを始めるためには、下記をRaspberry Piで行います:
 
-1. Open a terminal window by clicking on the black console icon on the toolbar, located at the top-left corner of your Pi's desktop.
-2. You'll need to start the installation script to input your developer credentials.  The terminal should come up in the /home/pi directory.  In the terminal window, type: 
-`sudo bash install_avs_sdk.sh`.  You'll be prompted for your **ProductID** (no spaces), **ClientID**, and **Client Secret**.  Copy and paste these from your developer page, making sure you don't miss any characters or add any spaces.  Remember, your ProductID is not the same as your AmazonID!  
-![](assets/InstallScript.png)
-3. Check the confirmation printout of your credentials and hit "y" to continue.  Lots of messages and warnings will roll by - just continue on.
-4. A browser window will open to request a **Refresh token** for your device - **if your login is not working, open a new browser window and type http://localhost:3000 into the new browser, then login!** this token is what allows your device to access the AVS in the cloud by authenticating with **Login with Amazon** (LWA).  If you shipped a million Alexa-enabled products to your customers, each device could use the same ProductID, ClientID, and Client Secret - but each individual device would require its own unique **Refresh Token**.  Normally, the end user would get the refresh token when activating your product through their companion app, but for the purposes of this lab, you'll be the customer as well as the manufacturer.
-![](assets/TokenSuccess.png)
-5. If your refresh token isn't successfully delivered, you can try opening a 2nd browser window and manually go to http://localhost:3000.  Note that the script must be running when you open the page!  Also be sure to double-check your ProductID was entered correctly (no spaces).
+1. ラズパイデスクトップ左上にあるツールバーの黒いコンソールアイコンをクリックし、ターミナルウィンドウを開きます。
+2. インストールスクリプトを実行するために、デベロッパークルデンシャルを指定します。ターミナルは/home/piディレクトリ下で開かれます。ターミナルウィンドウで:`sudo bash install_avs_sdk.sh`を入力。プロンプトで、**ProductID** (空白なし)、**ClientID**、**Client Secret**の入力が求められます。Develper Portalよりこれらをコピー＆ペーストします。ProductIDとAmazonIDは異なるので注意。
+　![](assets/InstallScript.png)
+3. 確認ように出力されたクルデンシャルが正しいことを確認した後、"y"を入力する。多くのメッセージとWarningが出力されますが、続けます。
+4. デバイス用の**Refresh token**を要求するためブラウザーウィンドウが開きます。**もしログインが正しく動いていない場合、新しいブラウザーウィンドウを開き、http://localhost:3000を入力し、ログインします。** このトークンが、デバイスをクラウド上のAVSに接続する際に**Login with Amazon** (LWA)で認証のため利用されます。もし数百万ものAlexa搭載製品を出荷する際も、各デバイスは同じProductID、ClientID、Client Secretを利用することが可能となるが、各デバイスは固有の**Refresh Token**を必要とします。通常、エンドユーザはコンパニオンアプリで製品をActivateする際に、Refresh Tokenを取得します。今回のLabでは、製造元とエンドユーザの両方の立場で進めていきます。
+　　![](assets/TokenSuccess.png)
+5. 万が一Refresh Tokenが正しく提供されない場合、手動で２つ目のブラウザーウィンドウを起動し、http://localhost:3000を開きます。ページを開く際は、スクリプトが実行されている必要があります。また、ProductID(空白なし)が正しく設定されているかも確認してみてください。
 
 {:.verify}
-### Checkpoint 5
-
-1. Click on the folder icon on the top left corner of your screen to open a File Explorer window if you don't already have one open.  Navigate to */home/pi/sdk-folder/sdk-build/Integration* and right click on the **AlexaClientSDKConfig.json** file, then select text editor to view the contents.  You should see your developer credentials listed under the `authdelegate` section.  Ensure that the **"refreshToken"** field is populated - it should be a very long string of characters.
-![](assets/JSONcheck.png)
+### チェックポイント5
+1. File Explorerウィンドウが開かれていない場合、画面左上のフォルダーアイコンをクリックし、ウィンドウを開きます。*/home/pi/sdk-folder/sdk-build/Integration*に移動し、**AlexaClientSDKConfig.json**ファイルを右クリックし、ファイルの中身を確認するためテキストエディタを選択します。`authdelegate`セクションの中に、デベロッパーの来る電車るが設定されていることが確認できます。**"refreshToken"** フィールドにも長い文字列が設定されていることを確認します。
+　　![](assets/JSONcheck.png)

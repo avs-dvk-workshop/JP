@@ -1,35 +1,42 @@
 ---
-title: '7. Launch the Client'
+title: '7. クライアントの起動'
 
 layout: nil
 ---
 
-### Launch the Client
+### クライアントの起動
 
-The sample application is in the folder */home/pi/sdk-folder/sdk-build/SampleApp/src*.
+サンプルアプリケーションは*/home/pi/sdk-folder/sdk-build/SampleApp/src*フォルダー内に格納されています。
 
-To launch the sample app, you can use the **startsample.sh** script in the */home/pi/sdk-folder* directory. To see how it is being started, you can use File Manager to navigate to this directory, right-click and select Text Editor to view the contents:
+サンプルアプリを起動するためには、*/home/pi/sdk-folder*ディレクトリ内にある**startsample.sh**スクリプトを実行します。どのように起動されているかを確認したい場合、ファイルマネージャから格納ディレクトリに移動し、右クリックからテキストエディタを選択することで、中身を確認します。
 
 ![](assets/Debug9.png)
 
-You can see that it is starting with the highest debug level, **DEBUG9**. This will display status messages in the console as you communicate with Alexa. If you want to reduce output, simply change that to a lower number or remove it altogether. For starters, try it at the highest level so you can see what is going on behind the scenes.
+最もデバッグレベルの高い**DEBUG9**で起動されていることが確認できます。これによりコンソールにAlexaとのやり取りのステータスメッセージが表示されます。出力を少なくしたい場合、小さな数字を指定するか、指定をはずします。初めての場合は、裏で何が起きているのか確認するために最も高いデバッグレベルを指定することをおすすめします。
 
-## Terminal Window
+## ターミナルウィンドウ
 
-Open a new terminal window and run **startsample.sh** by pasting the following command into a terminal window:
+新しいターミナルウィンドウを開き、ターミナルウィンドウに下記のコマンドを入力することで**startsample.sh**を実行します。
 
 `cd /home/pi/sdk-folder
 sudo bash startsample.sh
 `
 
-You should see a connecting message, followed with a splash screen indicating your App has started successfully.
+Connectingのメッセージが確認できるとともに、アプリが正しく起動したことを示すスプラッシュスクリーンが表示されます。
 
 ![](assets/SampleApp.png)
 
-{:.verify}
-### Checkpoint 9
 
-1. Say "Alexa". You should see the console status change to **Listening**, then say "tell me a joke."  If Alexa responds with **Thinking**, then **Speaking**, you have a working prototype.  If you don't hear anything, ensure you have your earbuds plugged into the 3.5mm audio jack on your DSP board.  If you're using a speaker, ensure the speaker is turned on.  
-2. If your volume on your earbuds is too loud, you can use key commands in the sample app to turn down the volume.  Type **"p"**, hit enter, then hit **1** and **2** at the follow-up screens to turn down the volume.  Or - just use your voice and ask Alexa to turn it down!
-![](assets/VolumeDown.png)
-3. If your setup appears frozen and doesn't show **Thinking** when you speak, try typing **s** and hit enter to stop that interaction - if that doesn't work you can hit **q** to quit - then try restarting by opening a new terminal window and following the instructions above to relaunch the sample app.
+## 言語指定
+Alexaと日本語でやり取りができるよう、言語設定を行う。
+1. スプラッシュスクリーン表示後、言語設定をおこなうためキーコマンドの**"c"**を入力します。
+2. Setting OptionsでChange Languageの**"1"**を入力し、日本語に切り替えるために**"6"**を入力します。
+3. **locale set to ja-JP**ステータスがコンソールに表示されます。
+
+{:.verify}
+### チェックポイント9
+
+1. "Alexa"と話しかけます。コンソールのステータスが**Listening**に変わることを確認し、"なにかおもしろいことを言って"と続けます。Alexaが**Thinking**から**Speaking**にステータスに切り替われば、プロトタイプが正しく動いています。もし何も音声が聞こえない場合、イヤホンがDSPボードの3.5mmオーディオジャックに正しく接続されていることを確認します。スピーカーを利用している場合、スピーカーの電源が入っていることを確認します。
+2. もし音量が大きすぎる場合は、サンプルアプリのキーコマンドでボリュームを下げることができます。**"p"**を入力し、Enterを押します。そして下記の画面にもある通り、**"1"**、**"2"**の順ですすめることでボリュームが下がります。もしくは、シンプルにAlexaにボリュームを下げてと伝えることで下げることもできます!
+   ![](assets/VolumeDown.png)
+3. 万が一、設定が固まり、話しかけても**Thinking** が表示されない場合、**s**を入力しEnterを押すことで、インター楽ションを止めることができます。 - それでもうまくいかない場合は、**q**を入力することで終了させます。 - 新しいターミナルウィンドウを開き、上記手順に従い、サンプルアプリを再起動してみてください。

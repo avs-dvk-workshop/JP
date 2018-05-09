@@ -1,22 +1,22 @@
 ---
-title: '6. Run unit test'
+title: '6. ユニットテストの実行'
 
 
 layout: nil
 ---
-This assumes the build is in the directory created by the script (sdk-folder).
+スクリプト(sdk-folder)で、すでにディレクトリ内にビルドが生成されている前提
 
 
 
-#### Unit Tests
+#### ユニットテスト
 
-Go to the terminal window, and run the following steps to execute the series of Unit tests on your prototype.
+プロトタイプのユニットテスト郡を実行するため、ターミナルウィンドウで下記のステップを実行します。
 
 `cd /home/pi/sdk-folder/sdk-build
 sudo make all test
 `
 
-For this workshop, tests have been pre-built to save time.  If you have your earbuds or speakers in, you'll hear Alexa run through a series of audio tests as well as functional tests.
+本ワークショップでは、時間短縮のためテストはプリビルドされています。イヤフォンもしくはスピーカーがある場合、Alexaが一連のオーディオテストと機能テストを実施する内容を聞くことができます。
 
-Your test should take around 4 minutes and result in 571 tests complete with 100% success.  As a developer, any time you modify your client's on-device software, you should run **Unit Test** to ensure nothing was unintentionally broken.  Now you're ready to launch your client!
+テスト自体は４分程度かかり、571のテスト項目がすべて100% Successで完了します。デベロッパーは、クライアントデバイスソフトウェアを修正した際、いつでも**ユニットテスト**を実行し、意図しない不具合が起きていないことを確認できます。これでクライアントを起動する準備が整いました。
 

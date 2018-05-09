@@ -1,22 +1,21 @@
 ---
-title: '12. Pick your device location and other settings'
+title: '12. デバイスのロケーション指定とその他の設定'
 
 
 layout: nil
 ---
 
-### Choose your device's location on Alexa.Amazon.com
+### Alexa.Amazon.co.jpでデバイスのロケーションを設定
 
-If you ask Alexa what's the weather, how does the AVS know where you are located?  If you wish to change your location to deliver your local weather, time zone, or other location-specific data, you can access your settings menu by navigating to [Alexa.amazon.com](https://Alexa.amazon.com/).
+Alexaに"今日の天気は？"と問い合わせた際、AVSはどのようにあなたのいる場所を理解するのでしょうか？もし、天気予報を伝える地域やタイムゾーン、もしくはその他場所に関するデータを変更したい場合、[Alexa.amazon.co.jp](https://alexa.amazon.co.jp)にアクセスし、設定メニューから行うことができます。
 
-Navigate down to the **Settings** tab and select the device you created - you can identify it by your unique **Product Name** - if your sample app is up and running, you should see status as "Online".
+ナビゲーションの**設定**タブから、登録したデバイスを選択します。 - ユニークな**プロダクト名**でデバイスの識別ができます。 - もしSample Appが起動している場合、ステータスが"オンライン"になっています。
 
-Select your device, and change the location by Zip Code to whatever you prefer.  If you're not sure of your current local zip code - no need to look it up online, just ask Alexa what the zip code for Las Vegas is! ;-)  
-
+対象のデバイスを選択し、所在地にてご自身の住所を設定します。
 ![AlexaSettings](assets/AlexaSettings.png)
 
-You won't need to restart your Sample App to see the change - as soon as you update your setting in the cloud, you'll receive data for that location.  Try asking Alexa what the weather is again and see where your device is now "located"!    
+設定を確認するためのSample Appの再起動は不要です。- クラウドで設定を更新すると、即時その場所の情報を得ることができるようになります。Alexaに再度天気を聞いてみると、指定した所在地の情報がきけます。
 
-The Alexa.Amazon.com page is similar to the phone app - try looking around on your "home" page and you should find lots of interesting options.  You can even listen back to your utterances - see how the AVS text-to-speech engine hears and interprets all your requests you've asked so far in this workshop!
+Alexa.Amazon.co.jpの左メニューより"ホーム"を選択してください。- そこで様々な情報を確認することができます。直近のリクエスト内容を聞くことも可能です。 - 聞いていただくと、いかにマイクロフォンの選定があなたのデバイスに取って重要かが理解いただけるかと思います。
 
 ---

@@ -1,21 +1,18 @@
 ---
-title: '9. Add Visual Meta-data using Display Cards'
+title: '9. ディスプレイカードを利用して、ビジュアルメタデータ追加する'
 
 
 layout: nil
 ---
 
-### Enable Display Cards on your Device Profile
+### デバイスプロファイルで、ディスプレイカードを有効化
+もし、Alexa搭載製品がグラフィカルやテキストを表示できるような画面機能を持っている場合、Alexaからの応答にビジュアルメタデータ(ディスプレイカード)を追加することができます。AVSからこのようなデータを受け取るには、製品のレジストレーションで指定する必要があります。
 
-If your Alexa-enabled device has a screen capable of displaying graphics or text, you can add visual metadata (Display Cards) to your responses from Alexa.  You'll need to register your product according to its capability in order to get this data from the AVS.
-
-Navigate back to your developer portal at [developer.amazon.com](https://developer.amazon.com/login.html).  Select "manage" on your device, and navigate to the **capabilities** tab under **Details and management**.  Check the box for **Display Cards** and choose **Display Cards with Media** from the list.  Click **Update** to save your changes.  You should get a pop-up confirming your change was successful.
-
+Developerポータル[developer.amazon.com](https://developer.amazon.com/login.html)に戻ります。今回の製品の"管理する"を選択し、**詳細と管理**の下の**機能**タブに遷移します。**カードを表示する**のボックスをチェックし、リストから**メディアつきカードを表示する**を選択します。変更を保存するため**更新**をクリックします。確認用のポップアップが表示され、更新が反映されます。
 ![DisplayCards](assets/DisplayCards.png)
 
-Now, restart your Sample App and ask **"Alexa, play NPR on TuneIn"**.  Scroll up through the logs and you should see a **RenderPlayerInfoCard** - this is the visual metadata delivered along with your response from Alexa.  Copy the URL into a browser window and you'll see the image that would be displayed if your device has a screen with graphics capability.
+サンプルアプリを再起動し、**"Alexa、TuneInでクラッシックFMを再生して"と話します。ログをスクロールして、**RenderPlayerInfoCard**を探します。 - これがAlexaから送信されたビジュアルメタデータ情報になります。 URLをコピーしてブラウザーでアクセスすると製品に画面機能がある場合に、表示される画像を確認することができます。
 
 ![DisplayCards](assets/DisplayCards_NPR.png)
 
-Try asking Alexa what the weather is - you should see a much more complex **RenderPlayerInfoCard** displayed, with lots of different URLs for graphics.  For this workshop, you can copy and paste the URLs to look at each one individually in your web browser - for your product, you can leverage the SDK's new **TemplateRuntime** capability agent to parse this for you!  
-
+Alexaに天気を確認してみます。- より複雑で、グラフィック用に多くの異なるURLが含まれた、**RenderPlayerInfoCard**が表示されます。これら各URLをブラウザーにコピー＆ペーストして確認できます。 - 製品では、SDKの新しい機能である**TemplateRuntime** capability agentを利用して、パースすることができます。
