@@ -16,10 +16,10 @@ layout: nil
 {:.steps}
 ### ラズパイの組み立て
 
-1. Micro SDカードをラズパイのMicro SDカードスロット差し込み。接触部分を上に向けるよう注意してください。
+1. Micro SDカードをラズパイのMicro SDカードスロット差し込む (接触部分を上に向けるよう注意してください。)
 2. キーボードとマウスをUSBポートに接続
-3. HDMIポートを使いモニターに接続
-4. イーサネットがある場合は接続 - ない場合は、画面右上部にあるWifiのアイコンをクリックし、Wifiを有効にするとともに、SSIDを指定
+3. HDMIポートを利用し、モニターに接続
+4. イーサネットがある場合はケーブルを接続 - ない場合は、画面右上部にあるWifiのアイコンをクリックし、Wifiを有効にするとともに、SSIDを指定
 ![wifi](/assets/wifi.png)
 
 
@@ -55,9 +55,10 @@ Intelのキットは音声をキャプチャする**マイクロフォンアレ�
 1. ラズパイのマイクロUSBコネクターに電源を差します。
 2. キーボードレイアウトが正しいことを確認してください。(日本語キーボードの場合は、Japaneseを選択) 画面左上部のRaspberryアイコンからKeyboard and Mouse設定を選択して変更してください。
 ![Keyboard setup](/assets/KBAM.png)
-3. OS言語が正しいことを確認してください。(日本語のAlexaを利用する場合は、Japaneseを選択) 画面左上部のRaspberryアイコンから、Raspberry Pi Configurationを選択しLocaleを日本に設定してください。
-![Locale setup](/assets/XXX.png)
-4. ツールバー上の地球のアイコンをクリックし、ブラウザーを起動してください。
+3. OS言語が正しいことを確認してください。(日本語のAlexaを利用する場合は、Japaneseを選択) 画面左上部のRaspberryアイコンから、Raspberry Pi Configurationを選択しLocaleをja(Japan)に設定してください。
+![Locale setup](/assets/locale.png)
+4. OSの再起動が促されるため、再起動を行い画面が日本語に変更されていることを確認してください。
+5. ツールバー上の地球のアイコンをクリックし、ブラウザーを起動してください。
 
 {:.verify}
 ### チェックポイント 1
