@@ -56,7 +56,7 @@ Intelのキットは音声をキャプチャする**マイクロフォンアレ�
 2. キーボードレイアウトが正しいことを確認してください。(日本語キーボードの場合は、Japaneseを選択) 画面左上部のRaspberryアイコンからKeyboard and Mouse設定を選択して変更してください。
 ![Keyboard setup](/assets/KBAM.png)
 3. OS言語が正しいことを確認してください。(日本語のAlexaを利用する場合は、Japaneseを選択) 画面左上部のRaspberryアイコンから、Raspberry Pi Configurationを選択しLocaleをja(Japan)に設定してください。
-![Locale setup](/assets/locale.png)
+![Locale setup](/JP/assets/locale.png)
 4. OSの再起動が促されるため、再起動を行い画面が日本語に変更されていることを確認してください。
 5. ツールバー上の地球のアイコンをクリックし、ブラウザーを起動してください。
 
