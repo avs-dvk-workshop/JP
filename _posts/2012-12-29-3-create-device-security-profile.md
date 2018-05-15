@@ -13,14 +13,14 @@ Amazon Developerアカウントの登録後、Alexaデバイスとセキュリ�
 1. [developer.amazon.com](https://developer.amazon.com/login.html)よりAmazon Developer Portalにログイン。右上の”Developer Console”をクリック。
 2. Alexaタブをクリックし、Alexa Voice Service下部にあるGetting Startedボタンをクリック。
    ![](assets/avs-navigation-new.png)
-3. 初めてAVSを利用する場合、ウェルカム画面が表示されます。**GET STARTED**ボタンをクリックします。すでにAVSを利用されたことがある場合、**Create Product**ボタンをクリ行くします。
+3. 初めてAVSを利用する場合、ウェルカム画面が表示されます。**GET STARTED**ボタンをクリックします。すでにAVSを利用されたことがある場合、**Create Product**ボタンをクリックします。
 
 {:.tab}
 #### 製品情報
 
 1. **製品名**: Developer Portal上での表示名および、ユーザが製品をAmazonに登録した祭に、ユーザにも表示される製品名。
 2. **製品ID**: シンプルな製品識別名。**空白不可**。
-3. *製品はアプリや出刃オスを使用しますか？*にて**端末**を選択。
+3. *製品はアプリやデバイスを使用しますか？*にて**端末**を選択。
 4. *ご使用の端末は、コンパニオンアプリを使用しますか?*で**いいえ**を選択 。
 5. 製品カテゴリーを選択。どのカテゴリーでも可。製品概要を記載。
 6. *エンドユーザは、商品とどのようにやり取りするのでしょうか？*にて**ファーフィールド**を選択。

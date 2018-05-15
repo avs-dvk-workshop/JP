@@ -11,7 +11,7 @@ layout: nil
 Developerポータル[developer.amazon.com](https://developer.amazon.com/login.html)に戻ります。今回の製品の"管理する"を選択し、**詳細と管理**の下の**機能**タブに遷移します。**カードを表示する**のボックスをチェックし、リストから**メディアつきカードを表示する**を選択します。変更を保存するため**更新**をクリックします。確認用のポップアップが表示され、更新が反映されます。
 ![DisplayCards](assets/DisplayCards.png)
 
-サンプルアプリを再起動し、**"Alexa、TuneInでクラッシックFMを再生して"と話します。ログをスクロールして、**RenderPlayerInfoCard**を探します。 - これがAlexaから送信されたビジュアルメタデータ情報になります。 URLをコピーしてブラウザーでアクセスすると製品に画面機能がある場合に、表示される画像を確認することができます。
+サンプルアプリを再起動し、**"Alexa、TuneInでクラッシックFMを再生して"**と話します。ログをスクロールして、**RenderPlayerInfoCard**を探します。 - これがAlexaから送信されたビジュアルメタデータ情報になります。 URLをコピーしてブラウザーでアクセスすると製品に画面機能がある場合に、表示される画像を確認することができます。
 
 ![DisplayCards](assets/DisplayCards_NPR.png)
 
