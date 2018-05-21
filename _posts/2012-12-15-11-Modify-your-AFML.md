@@ -32,7 +32,7 @@ layout: nil
 2. **FocusManagerInterface.h**を右クリックして、**Text Editor**を選択し、ファイルを開きます。
 ![FM_location](../assets/IntelFocusManagerLocation.png)
 3. 下にスクロールするとFocusManagerInterface内にチャンネル優先度のリストを確認できます。数字が小さいほうが優先度が高くなります。-なぜ1/2/3ではなく100/200/300で設定されているのでしょうか？これは新しいチャンネルを作成された場合にも、柔軟に優先度を指定できるようにしているためです。例えばチャンネル1-99を作成した場合、これらは**Dialog**よりも優先度が高く設定することが可能となります。
-4. 本エクササイズでは、**Content**の優先度を上げることで、**Alerts**によって割込が発生しないようにします。`CONTENT_CHANNEL_PRIORITY`が`300`に設定されています。- 300から**199**に変更することで、Alertsより優先度を高く設定します。**FocusManagerInterface.h**を保存して閉じます。
+4. 本エクササイズでは、**Content**の優先度を上げることで、**Alerts**によって割込が発生しないようにします。`CONTENT_CHANNEL_PRIORITY`が`300`に設定されています。 300から**199**に変更することで、Alertsより優先度を高く設定します。**FocusManagerInterface.h**を保存して閉じます。
 ![FM_mod](../assets/focusManager.png)
   
 
@@ -59,4 +59,4 @@ sudo bash startsample.sh
 
 ### プロトタイプ環境での体験
 1. **Dialog**よりも高い優先度のものを作った場合、どのようなことが起きるでしょうか？
-2. LabマニュアルStep8の手順にしたがい**Unit Test**を再実行して見ましょう。どのような結果が起きましたか？
+2. LabマニュアルStep6の手順にしたがい**Unit Test**を再実行して見ましょう。どのような結果が起きましたか？

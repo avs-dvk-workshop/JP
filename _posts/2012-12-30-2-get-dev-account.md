@@ -13,4 +13,4 @@ Amazon.co.jpアカウントを持っていない場合、[developer.amazon.com](
 
 {:.verify}
 ### チェックポイント2
-1.  [https://developer.amazon.com/edw/home.html](https://developer.amazon.com/edw/home.html)にログイン
+1.  [https://developer.amazon.com/avs/home.html](https://developer.amazon.com/avs/home.html)にログイン
