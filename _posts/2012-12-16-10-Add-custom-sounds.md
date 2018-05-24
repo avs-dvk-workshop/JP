@@ -17,10 +17,10 @@ Alexa搭載製品に話しかけた際に、ウェイクワードの検知をわ
 
 ![Add_include](../assets/Play_Ding_1.png)
 
-OSイメージの中に、本エクサイズで利用できるsample.wavファイルが/home/pi/CustomSoundsフォルダ内に格納されています。オーディオキューとして利用するため、このファイルのパスを追加します。UIManagerファイルの下部に`printState()`ファンクションで、`case DialogUXState::LISTENING:`と記載されている箇所に下記のコマンドを追記します。
+OSイメージの中に、本エクサイズで利用できるテスト用WAVファイルが/home/pi/CustomSoundsフォルダ内に格納されています。オーディオキューとして利用するため、このファイルのパスを追加します。UIManagerファイルの下部に`とLedState()`ファンクションで、`case DialogUXState::LISTENING:`と記載されている箇所に下記のコマンドを追記します。
 `system("play /home/pi/CustomSounds/ding.wav");`
 
-![Add_sound](../assets/Play_Ding_2.png)
+![Add_sound](../JP/assets/Play_Ding_2.png)
 
 テキストファイルを閉じる前に保存します。オーディオファイルを再生させるためには、**sox**をダウンロードし、修正を反映させるためにサンプルアプリを再コンパイルします。はじめに、"**q**"を入力し、**エンター**を押すことで、起動しているサンプルアプリを終了させます。(起動している場合のみ) 
 ターミナルを起動して、下記を実行:
