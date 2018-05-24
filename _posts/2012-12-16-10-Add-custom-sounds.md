@@ -17,7 +17,7 @@ Alexa搭載製品に話しかけた際に、ウェイクワードの検知をわ
 
 ![Add_include](../assets/Play_Ding_1.png)
 
-OSイメージの中に、本エクサイズで利用できるテスト用WAVファイルが/home/pi/CustomSoundsフォルダ内に格納されています。オーディオキューとして利用するため、このファイルのパスを追加します。UIManagerファイルの下部に`とLedState()`ファンクションで、`case DialogUXState::LISTENING:`と記載されている箇所に下記のコマンドを追記します。
+OSイメージの中に、本エクサイズで利用できるテスト用WAVファイルが/home/pi/CustomSoundsフォルダ内に格納されています。オーディオキューとして利用するため、このファイルのパスを追加します。UIManagerファイルの下部に`toLedState()`ファンクションで、`case DialogUXState::LISTENING:`と記載されている箇所に下記のコマンドを追記します。
 `system("play /home/pi/CustomSounds/ding.wav");`
 
 ![Add_sound](../JP/assets/Play_Ding_2.png)
