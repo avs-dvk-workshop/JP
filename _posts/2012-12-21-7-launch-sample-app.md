@@ -30,7 +30,7 @@ Connectingのメッセージが確認できるとともに、アプリが正し�
 ## 言語指定
 Alexaと日本語でやり取りができるよう、言語設定を行う。
 1. スプラッシュスクリーン表示後、言語設定をおこなうためキーコマンドの**"c"**を入力します。
-2. Setting OptionsでChange Languageの**"1"**を入力し、日本語に切り替えるために**"6"**を入力します。
+2. Setting OptionsでChange Languageの**"1"**を入力し、日本語に切り替えるために**"Japaneseの番号"**を入力します。
 3. **locale set to ja-JP**ステータスがコンソールに表示されます。
 
 {:.verify}
